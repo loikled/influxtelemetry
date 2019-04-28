@@ -37,7 +37,7 @@ def main():
 	client.create_database(DBNAME)
 	client.switch_database(DBNAME)
 	points = []
-	x, y = create_curve(0.01)
+	x, y = create_curve(0.25)
 
 	for xi,yi in zip(x,y):
 		p = create_point("kneePosition", xi, yi)
